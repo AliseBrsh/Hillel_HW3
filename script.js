@@ -1,24 +1,19 @@
 //ЗАДАЧА 1
 
 let quantityOfNumber = prompt('Enter a number');
-let q = 1;
+let q = 0;
 let w = 1;
+let stringNumber = `${q}, ${w}, `;
 
-for (let i = 1; i <= 1; i++) {
-    console.log(i - 1);
-   for (let k = 1; k<=1; k++) {
-    console.log(k);
-    for (let j = 1; j <= 1; j++){
-        console.log(j);
-        for (let l = 3; l <= quantityOfNumber; l++){
-            let e = q + w;
-            q = w;
-            w = e;
-            console.log(w);
-        }
-    }
-   }
-};
+
+
+for (let l = 3; l <= quantityOfNumber; l++){
+    let e = q + w;
+    stringNumber += `${e}, ` //последнюю запятую так и не получилось убрать ) 
+    q = w;
+    w = e;
+}
+console.log(stringNumber);
 
 //ЗАДАЧА 2
 
